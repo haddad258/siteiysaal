@@ -12,7 +12,7 @@ function About() {
 
       <div className="about-text-content">
         <h3 className="about-title">
-          <span>About Us</span>
+          <span>À propos de nous</span>
         </h3>
         <p className="about-description">
           IYSAAL est une start-up dynamique spécialisée dans le développement d'applications logistiques avancées.
@@ -22,7 +22,7 @@ function About() {
           approfondie des défis logistiques modernes pour offrir des solutions sur mesure et évolutives.
         </p>
 
-        <h4 className="about-text-title">Your Solutions</h4>
+        <h4 className="about-text-title">Notre solutions</h4>
 
         <SolutionStep
           title="Solutions Logistiques Innovantes"

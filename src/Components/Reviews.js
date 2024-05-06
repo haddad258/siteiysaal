@@ -34,10 +34,10 @@ function Reviews() {
     <div className="review-section" id="reviews">
       <div className="rw-text-content">
         <p className="rw-text-title">
-         <span className="rw-text-num">clients satisfaits</span>
+         <span className="rw-text-num">Clients satisfaits</span>
         </p>
 
-        <p className="rw-text-desc">Don't believe us, Check clients word</p>
+        {/* <p className="rw-text-desc">Don't believe us, Check clients word</p> */}
 
         <p className="rw-text-format">
           <span className="rw-text-quote1">''</span>

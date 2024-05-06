@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
+import Doctor from "../Assets/internet.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
@@ -36,10 +36,10 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section ">
         <div className="text-section">
-          <p className="text-headline">❤️ ❤️ Health comes first</p>
+          {/* <p className="text-headline">❤️ ❤️ Health comes first</p>
           <h5 className="text-title">
             Find your Doctor and make an Appointments
-          </h5>
+          </h5> */}
           <p className="text-descritpion">
           Notre société se spécialise dans le développement de solutions innovantes pour le suivi logistique et la gestion de la chaîne d'approvisionnement.
           </p>
@@ -58,7 +58,7 @@ function Hero() {
           </button>
           <div className="text-stats">
             <div className="text-stats-container">
-              <p>IoT</p>
+              <p>IOT</p>
               <p> dans le secteur de la logistique</p>
             </div>
 
@@ -68,7 +68,7 @@ function Hero() {
             </div>
 
             <div className="text-stats-container">
-              <p>technologie Cloud</p>
+              <p>Technologie Cloud</p>
               <p>Solutions logistiques basées sur des solutions DevOps modernes </p>
             </div>
           </div>

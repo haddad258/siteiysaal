@@ -34,7 +34,7 @@
     position: absolute;
     width: 75%;
     height: 4px;
-    background-color: #9D2553;
+    background-color: #f89b00;
     border-radius: 8px;
     left: 0;
     bottom: -12px;
@@ -61,14 +61,14 @@
 .ba-check-last {
     margin-bottom: 40px;
 }
-/* Book Appointment Button */
+/* Contactez nous Button */
 .ba-appointment-btn {
     padding: 18px 24px;
     color: white;
     border: 1px solid transparent;
     border-radius: 50px;
     outline: transparent;
-    background-color: #1A8EFD;
+    background-color: #f89b00;
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     letter-spacing: .8px;
@@ -76,9 +76,9 @@
     transition: all .4s ease;
 }
 .ba-appointment-btn:hover {
-    color: #1A8EFD;
+    color: #f89b00;
     background-color: transparent;
-    border: 1px solid #1A8EFD;
+    border: 1px solid #f89b00;
 }
 /* Responsive */
 @media screen and (max-width: 1000px) {

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from "../Assets/siysaal.png";
+
 import {
   faCommentDots,
   faBars,
@@ -31,7 +33,8 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Iysaal <span className="navbar-sign">ايصال</span>
+          <img src={logo} alt="logo" style={{ marginTop: "30px" }}/>
+          {/* Iysaal <span className="navbar-sign">ايصال</span> */}
         </Link>
       </h1>
 
@@ -39,7 +42,7 @@ function Navbar() {
       <ul className="navbar-items">
         <li>
           <Link to="/" className="navbar-links">
-            Home
+            Accueil
           </Link>
         </li>
         <li>
@@ -49,19 +52,15 @@ function Navbar() {
         </li>
         <li>
           <a href="#about" className="navbar-links">
-            About
+            À propos
           </a>
         </li>
         <li>
           <a href="#reviews" className="navbar-links">
-            Reviews
+           Notre équipe
           </a>
         </li>
-        <li>
-          <a href="#doctors" className="navbar-links">
-            Doctors
-          </a>
-        </li>
+        
       </ul>
 
       <button
