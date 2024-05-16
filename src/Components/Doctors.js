@@ -35,6 +35,27 @@ function Doctors() {
           stars="4.8"
           reviews="700"
         />
+         <DoctorCard
+          img={profile2}
+          name="Soumaya"
+          title="Hematologists"
+          stars="4.8"
+          reviews="700"
+        />
+         <DoctorCard
+          img={profile2}
+          name="Soumaya"
+          title="Hematologists"
+          stars="4.8"
+          reviews="700"
+        />
+         <DoctorCard
+          img={profile2}
+          name="Soumaya"
+          title="Hematologists"
+          stars="4.8"
+          reviews="700"
+        />
         <DoctorCard
           img={profile3}
           name="Kawther"
