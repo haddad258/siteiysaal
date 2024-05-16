@@ -5,7 +5,7 @@ import "../Styles/About.css";
 
 function About() {
   return (
-    <div className="about-section" id="about">
+    <div className="about-section section-container" id="about">
       <div className="about-image-content">
         <img src={Doctor} alt="Doctor Group" className="about-image1" />
       </div>

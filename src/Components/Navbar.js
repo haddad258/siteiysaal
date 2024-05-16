@@ -46,17 +46,19 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="#services" className="navbar-links">
-            Services
-          </a>
+             <Link to="/services" className="navbar-links">
+             Services
+            </Link>
         </li>
         <li>
-          <a href="#about" className="navbar-links">
+          <li>
+             <Link to="/about" className="navbar-links">
             À propos
-          </a>
+            </Link>
+        </li>
         </li>
         <li>
-          <a href="#equipe" className="navbar-links">
+          <a href="equipe" className="navbar-links">
            Notre équipe
           </a>
         </li>
