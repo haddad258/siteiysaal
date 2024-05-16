@@ -37,7 +37,7 @@ function SubscribeNewsletter() {
         type="text"
         inputMode="email"
         className="ft-input"
-        placeholder="Enter your email address"
+        placeholder="Saisissez votre adresse é"
         name="email"
         value={inputEmail}
         onChange={handleEmailInput}

@@ -51,6 +51,20 @@
     font-size: 18px;
     letter-spacing: .7px;
 }
+.form-content label :is(textarea, select) {
+    width: 100%;
+    margin: 8px 0;
+    padding: 0 12px;
+    display: block;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #c9def4;
+    outline: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+}
 /* Success Message */
 .success-message {
     margin: 20px 0 0 0;

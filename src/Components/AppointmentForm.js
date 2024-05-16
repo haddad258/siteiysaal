@@ -9,7 +9,8 @@ function AppointmentForm() {
   });
 
   const [patientName, setPatientName] = useState("");
-  const [patientNumber, setPatientNumber] = useState("");
+  const [patientMessage, setpatientMessage] = useState("");
+  const [patientEmail, setpatientEmail] = useState("");
   const [patientGender, setPatientGender] = useState("default");
   const [appointmentTime, setAppointmentTime] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
@@ -22,16 +23,17 @@ function AppointmentForm() {
     // Validate form inputs
     const errors = {};
     if (!patientName.trim()) {
-      errors.patientName = "Patient name is required";
+      errors.patientName = "Name is required";
     } else if (patientName.trim().length < 8) {
-      errors.patientName = "Patient name must be at least 8 characters";
+      errors.patientName = "Name must be at least 8 characters";
     }
 
-    if (!patientNumber.trim()) {
-      errors.patientNumber = "Patient phone number is required";
-    } else if (patientNumber.trim().length !== 10) {
-      errors.patientNumber = "Patient phone number must be of 10 digits";
-    }
+    if (!patientEmail.trim()) {
+      errors.patientEmail = "Email is required";
+    } 
+    // else if (patientEmail.trim().length !== 10) {
+    //   errors.patientEmail = "Patient phone number must be of 10 digits";
+    // }
 
     if (patientGender === "default") {
       errors.patientGender = "Please select patient gender";
@@ -47,6 +49,9 @@ function AppointmentForm() {
     }
     if (preferredMode === "default") {
       errors.preferredMode = "Please select preferred mode";
+    } 
+    if (!patientMessage.trim()) {
+      errors.patientMessage = " Message is required";
     }
 
     if (Object.keys(errors).length > 0) {
@@ -56,7 +61,8 @@ function AppointmentForm() {
 
     // Reset form fields and errors after successful submission
     setPatientName("");
-    setPatientNumber("");
+    setpatientEmail("");
+    setpatientMessage("");
     setPatientGender("default");
     setAppointmentTime("");
     setPreferredMode("default");
@@ -73,18 +79,19 @@ function AppointmentForm() {
     <div className="appointment-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Health <span className="legal-siteSign">+</span>
+          Iysaal
+           {/* <span className="legal-siteSign">+</span> */}
         </Link>
       </h1>
 
       <div className="form-container">
         <h2 className="form-title">
-          <span>Contactez nous Online</span>
+          <span>Contactez nous</span>
         </h2>
 
         <form className="form-content" onSubmit={handleSubmit}>
           <label>
-            Patient Full Name:
+            Votre nom:
             <input
               type="text"
               value={patientName}
@@ -96,18 +103,31 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Patient Phone Number:
+            Votre email:
             <input
-              type="text"
-              value={patientNumber}
-              onChange={(e) => setPatientNumber(e.target.value)}
+              type="email"
+              value={patientEmail}
+              onChange={(e) => setpatientEmail(e.target.value)}
               required
             />
-            {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
+            {formErrors.patientEmail && <p className="error-message">{formErrors.patientEmail}</p>}
           </label>
 
           <br />
           <label>
+            Votre message:
+            <textarea
+              value={patientMessage}
+              onChange={(e) => patientMessage(e.target.value)}
+              placeholder="Saisissez votre message ici..."
+              rows={5} // Nombre de lignes de la zone de texte
+              cols={50} // Nombre de colonnes de la zone de texte
+            />
+            {formErrors.patientMessage && <p className="error-message">{formErrors.patientMessage}</p>}
+          </label>
+
+          <br />
+          {/* <label>
             Patient Gender:
             <select
               value={patientGender}
@@ -120,10 +140,10 @@ function AppointmentForm() {
               <option value="private">I will inform Doctor only</option>
             </select>
             {formErrors.patientGender && <p className="error-message">{formErrors.patientGender}</p>}
-          </label>
+          </label> */}
 
-          <br />
-          <label>
+          {/* <br /> */}
+          {/* <label>
             Preferred Appointment Time:
             <input
               type="datetime-local"
@@ -134,8 +154,8 @@ function AppointmentForm() {
             {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
           </label>
 
-          <br />
-          <label>
+          <br /> */}
+          {/* <label>
             Preferred Mode:
             <select
               value={preferredMode}
@@ -149,9 +169,9 @@ function AppointmentForm() {
             {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
           </label>
 
-          <br />
+          <br /> */}
           <button type="submit" className="text-appointment-btn">
-            Confirm Appointment
+            Contacter
           </button>
 
           <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Appointment details has been sent to the patients phone number via SMS.</p>

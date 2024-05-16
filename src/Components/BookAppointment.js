@@ -12,7 +12,7 @@ function BookAppointment() {
   const navigate = useNavigate();
 
   const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+    navigate("/contact");
   };
 
   return (
@@ -45,7 +45,7 @@ function BookAppointment() {
           type="button"
           onClick={handleBookAppointmentClick}
         >
-          <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+          <FontAwesomeIcon icon={faCalendarCheck} />Contactez-nous
         </button>
       </div>
     </div>

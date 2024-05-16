@@ -1,7 +1,8 @@
 import React from "react";
 import "../Styles/Footer.css";
 import SubscribeNewsletter from "./SubscribeNewsletter";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import logo from "../Assets/siysaal.png";
 
 function Footer() {
   return (
@@ -10,19 +11,20 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Iysaal <span className="ft-sign">+</span>
+              <img src={logo} alt="logo" />
+
+              {/* Iysaal <span className="ft-sign">+</span> */}
             </p>
-            <p className="ft-description">
-            Explorez les services de notre équipe d'experts 
-            en développement informatique, et obtenez des solutions sur mesure pour vos besoins en matière de logiciels.
+            <p className="ft-description" style={{ marginTop: "unset" }}>
+            Explorez les services de notre équipe d'experts en développement informatique, et obtenez des solutions sur mesure pour vos besoins en matière de logiciels.
             </p>
           </div>
 
           <SubscribeNewsletter />
         </div>
 
-        <div className="ft-list">
-          <p className="ft-list-title">Services</p>
+        {/* <div className="ft-list">
+          <p className="ft-list-title">Réseaux sociaux</p>
           <ul className="ft-list-items">
             <li>
               <a href="#services">Emergency Care</a>
@@ -40,9 +42,9 @@ function Footer() {
               <a href="#services">Insights for doctors</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
-        <div className="ft-list">
+        {/* <div className="ft-list">
           <p className="ft-list-title">Legal</p>
           <ul className="ft-list-items">
             <li>
@@ -61,25 +63,22 @@ function Footer() {
               <Link to={"/legal"}>How it Works</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="ft-list" id="contact">
-          <p className="ft-list-title">Talk To Us</p>
+          <p className="ft-list-title">Contact</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">support@healthplus.com</a>
+              <a href="mailto:contact@iysaal.com">contact@iysaal.com</a>
+            </li>
+           
+            <li>
+              <a href="tel:(+216) 71 870 031">(+216) 71 870 031</a>
             </li>
             <li>
-              <a href="mailto:appointment@healthplus.com">
-                appointment@healthplus.com
-              </a>
+              <a href="adresse:18 Rue Malaga Manar 1 - 2092">18 Rue Malaga Manar 1 - 2092</a>
             </li>
-            <li>
-              <a href="tel:+022 5454 5252">+022 5454 5252</a>
-            </li>
-            <li>
-              <a href="tel:+022 2326 6232">+022 2326 6232</a>
-            </li>
+            
           </ul>
         </div>
       </div>

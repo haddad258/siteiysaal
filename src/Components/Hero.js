@@ -14,7 +14,7 @@ function Hero() {
   };
 
   const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+    navigate("/contact");
   };
 
   useEffect(() => {
@@ -54,7 +54,7 @@ function Hero() {
             type="button"
             onClick={handleBookAppointmentClick}
           >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+            <FontAwesomeIcon icon={faCalendarCheck} /> Contactez-nous
           </button>
           <div className="text-stats">
             <div className="text-stats-container">
