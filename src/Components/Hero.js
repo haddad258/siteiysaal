@@ -1,92 +1,37 @@
-import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/internet.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
-import "../Styles/Hero.css";
+import React from "react";
 
 function Hero() {
-  const navigate = useNavigate();
-  const [goUp, setGoUp] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const handleBookAppointmentClick = () => {
-    navigate("/contact");
-  };
-
-  useEffect(() => {
-    const onPageScroll = () => {
-      if (window.scrollY > 600) {
-        setGoUp(true);
-      } else {
-        setGoUp(false);
-      }
-    };
-    window.addEventListener("scroll", onPageScroll);
-
-    return () => {
-      window.removeEventListener("scroll", onPageScroll);
-    };
-  }, []);
+ 
 
   return (
-    <div className="section-container">
-      <div className="hero-section ">
-        <div className="text-section">
-          {/* <p className="text-headline">❤️ ❤️ Health comes first</p>
-          <h5 className="text-title">
-            Find your Doctor and make an Appointments
-          </h5> */}
-          <p className="text-descritpion">
-          Notre société se spécialise dans le développement de solutions innovantes pour le suivi logistique et la gestion de la chaîne d'approvisionnement.
-          </p>
-          <p className="text-descritpion">
-           Grâce à notre expertise technologique de pointe, nous offrons des outils robustes pour optimiser l'efficacité opérationnelle, réduire les coûts et améliorer la visibilité tout au long du processus logistique.
-          </p>
-          <p className="text-descritpion">
-           Avec notre approche centrée sur la satisfaction client et l'innovation continue, nous sommes le partenaire idéal pour répondre aux défis complexes de la gestion de la supply chain.
-          </p>
-          <button
-            className="text-appointment-btn"
-            type="button"
-            onClick={handleBookAppointmentClick}
-          >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Contactez-nous
-          </button>
-          <div className="text-stats">
-            <div className="text-stats-container">
-              <p>IOT</p>
-              <p> dans le secteur de la logistique</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>Big data</p>
-              <p>chaîne d'approvisionnement,améliorer les opérations</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>Technologie Cloud</p>
-              <p>Solutions logistiques basées sur des solutions DevOps modernes </p>
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>Développez votre potentiel avec Iysaal </h1>
+            <p>
+             Nous sommes une équipe spécialisée dans le développement de solutions ERP (Enterprise Resource Planning) et d'applications sur mesure adaptées aux besoins spécifiques de nos clients.
+            </p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">
+               Découvrir
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                class="glightbox btn-watch-video d-flex align-items-center"
+              ></a>
             </div>
           </div>
-          
-        </div>
-
-        <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img
+              src="assets/img/hero-img.png"
+              class="img-fluid animated"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-
-      <div
-        onClick={scrollToTop}
-        className={`scroll-up ${goUp ? "show-scroll" : ""}`}
-      >
-        <FontAwesomeIcon icon={faAngleUp} />
-      </div>
-    </div>
+    </section>
   );
 }
 

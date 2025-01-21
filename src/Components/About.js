@@ -1,54 +1,62 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
-import SolutionStep from "./SolutionStep";
-import "../Styles/About.css";
+// import "../Styles/About.css";
 
 function About() {
   return (
-    <div className="about-section section-container" id="about">
-      <div className="about-image-content">
-        <img src={Doctor} alt="Doctor Group" className="about-image1" />
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>À propos de nous</h2>
+        <p>Notre mission principale est d'offrir des outils technologiques innovants, performants et entièrement adaptés aux besoins uniques de chaque entreprise, quelle que soit sa taille ou son secteur d'activité.</p>
       </div>
 
-      <div className="about-text-content">
-        <h3 className="about-title">
-          <span>À propos de nous</span>
-        </h3>
-        <p className="about-description">
-          IYSAAL est une start-up dynamique spécialisée dans le développement d'applications logistiques avancées.
-          Leur plateforme offre des solutions innovantes pour optimiser la chaîne d'approvisionnement, améliorer
-          la gestion des stocks et rationaliser les opérations logistiques pour les entreprises de toutes tailles.
-          Leur équipe de développeurs expérimentés combine une expertise technique approfondie avec une compréhension
-          approfondie des défis logistiques modernes pour offrir des solutions sur mesure et évolutives.
-        </p>
+      <div class="container">
 
-        <h4 className="about-text-title">Notre solutions</h4>
+        <div class="row gy-5">
 
-        <SolutionStep
-          title="Solutions Logistiques Innovantes"
-          description="Nous offrons des solutions logistiques innovantes pour simplifier la gestion des flux de marchandises et améliorer l'efficacité des chaînes d'approvisionnement."
-        />
-        <SolutionStep
-          title="Optimisation des Stocks avec nos Solutions de Gestion"
-          description="Avec notre expertise en gestion de stock, nous aidons les entreprises à optimiser leurs niveaux de stock, réduire les coûts de stockage et éviter les pénuries."
-        />
+          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <h3>Innovation</h3>
+            <p>
+            Chez Iysaal, nous intégrons les technologies les plus récentes pour offrir à nos clients des systèmes performants, évolutifs et durables.
+            </p>
+            <a href="#" class="about-btn align-self-center align-self-xl-start"><span>À props de nous</span> <i class="bi bi-chevron-right"></i></a>
+          </div>
 
-        <SolutionStep
-          title="Gestion Logistique Simplifiée avec nos Applications Mobiles"
-          description="Notre équipe de développement d'applications mobiles crée des applications conviviales et intuitives pour faciliter la gestion logistique sur le terrain, où que vous soyez."
-        />
-        <SolutionStep
-          title="Gestion Intégrée grâce à nos Solutions ERP Complètes"
-          description="Nous proposons des solutions ERP complètes qui intègrent toutes les facettes de votre entreprise, de la logistique à la comptabilité, pour une gestion globale et transparente de vos opérations. "
-        />
-        <SolutionStep
-          title="Gestion Précise grâce à nos Solutions d'Étiquetage"
-          description="Nos solutions d'étiquetage facilitent l'identification et le suivi des produits tout au long de leur parcours, garantissant une gestion précise et efficace des stocks."
-        />
+          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
 
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-briefcase"></i>
+                <h4><a href="" class="stretched-link">Expérience</a></h4>
+                <p>Depuis sa création en 2020, Iysaal a acquis une expertise solide dans le domaine des ERP et des applications personnalisées.</p>
+              </div>
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-gem"></i>
+                <h4><a href="" class="stretched-link">Solutions adaptées</a></h4>
+                <p>Chaque client est unique, et nous nous engageons à fournir des solutions sur mesure qui répondent à leurs besoins précis.</p>
+              </div>
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-broadcast"></i>
+                <h4><a href="" class="stretched-link">Support</a></h4>
+                <p>Notre équipe d'experts dévoués accompagne chaque client dans la mise en œuvre et l'utilisation optimale de leurs solutions, garantissant ainsi leur succès."</p>
+              </div>
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-easel"></i>
+                <h4><a href="" class="stretched-link">Support</a></h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
 
       </div>
-    </div>
+
+    </section>
   );
 }
 

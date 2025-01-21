@@ -1,25 +1,35 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import Header from "../Components/Header";
 import Hero from "../Components/Hero";
-import Info from "../Components/Info";
+import Clients from "../Components/Clients";
 import About from "../Components/About";
-import BookAppointment from "../Components/BookAppointment";
-import Reviews from "../Components/Reviews";
-// import Doctors from "../Components/Doctors";
+import Stats from "../Components/Stats";
+import Services from "../Components/Services";
+import Features from "../Components/Features";
+import Testimonials from "../Components/Testimonials";
+import Portfolio from "../Components/Portfolio";
+import Team from "../Components/Team";
+import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-
 function Home() {
   return (
-    <div className="home-section">
-      <Navbar />
-      <Hero />
-      <Info />
-      <About />
-      <BookAppointment />
-      <Reviews />
-      {/* <Doctors /> */}
+    <>
+      <Header />
+      <main class="main">
+        <Hero />
+        <Clients />
+        <About />
+        <Stats />
+        <Services />
+        <Features />
+        <Testimonials />
+        {/* <Portfolio /> */}
+        <Team />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+      
+    </>
   );
 }
 
