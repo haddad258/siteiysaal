@@ -20,7 +20,7 @@ function Header() {
           <li><a href="#about">À propos</a></li>
           <li><a href="#services">Services</a></li>
           {/* <li><a href="#portfolio">Portfolio</a></li> */}
-          <li><a href="#team">Équipe</a></li>
+          {/* <li><a href="#team">Équipe</a></li> */}
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

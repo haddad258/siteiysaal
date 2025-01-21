@@ -24,7 +24,7 @@ function Home() {
         <Features />
         <Testimonials />
         {/* <Portfolio /> */}
-        <Team />
+        {/* <Team /> */}
         <Contact />
       </main>
       <Footer />
