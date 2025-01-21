@@ -10,7 +10,7 @@ function Footer() {
         <div class="container">
           <div class="copyright text-center ">
             <p>
-              © <span>Iysaal </span>{" "}
+              © 2025 <span> Iysaal </span>{" "}
               {/* <strong class="px-1 sitename">Vesperr</strong>{" "}
               <span>All Rights Reserved</span> */}
             </p>
